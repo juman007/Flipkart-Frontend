@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-import "./menuHeader.css";
+// import "./menuHeader.css";
+import "./css.css";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllCategory } from "../../actions/category.Action";
 
@@ -23,11 +24,9 @@ const MenuHeader = () => {
                   <span>{cat.name}</span>
                )}
 
-               <ul>
-                  {cat.children && cat.children.length > 0 ? (
-                     <ul>{renderCategories(cat.children)}</ul>
-                  ) : null}
-               </ul>
+               {cat.children && cat.children.length > 0 ? (
+                  <ul>{renderCategories(cat.children)}</ul>
+               ) : null}
             </li>
          );
       }
