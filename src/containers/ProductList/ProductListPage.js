@@ -29,7 +29,7 @@ const ProductListPage = () => {
             return (
                <div className="card" key={index}>
                   <div className="cardHeader">
-                     <div>
+                     <div style={{ fontWeight: "bold" }}>
                         {slug}&nbsp;Mobile Under &#8377;
                         {priceRange[key].toLocaleString()}
                      </div>
